@@ -549,34 +549,6 @@
                 <button type="submit" class="btn-login">Entrar no Sistema</button>
             </form>
             
-            <!-- ÁREA DE DEMONSTRAÇÃO - REMOVA EM PRODUÇÃO -->
-            <div class="demo-users">
-                <h4>🧪 Usuários de Demonstração</h4>
-                <div class="demo-user">
-                    <div class="demo-user-info">
-                        <div class="demo-user-name">Diretor(a) DCL</div>
-                        <div class="demo-user-role">Acesso Administrativo</div>
-                    </div>
-                    <div class="demo-user-login" onclick="autoLogin('diretor', '123456')">diretor / 123456</div>
-                </div>
-                <div class="demo-user">
-                    <div class="demo-user-info">
-                        <div class="demo-user-name">Analista Sênior</div>
-                        <div class="demo-user-role">Usuário Avançado</div>
-                    </div>
-                    <div class="demo-user-login" onclick="autoLogin('analista.senior', '123456')">analista.senior / 123456</div>
-                </div>
-                <div class="demo-user">
-                    <div class="demo-user-info">
-                        <div class="demo-user-name">Analista Júnior</div>
-                        <div class="demo-user-role">Usuário Básico</div>
-                    </div>
-                    <div class="demo-user-login" onclick="autoLogin('analista.junior', '123456')">analista.junior / 123456</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
     <!-- Sistema Principal -->
     <div id="mainSystem" class="container hidden">
         <!-- Header -->
@@ -684,7 +656,7 @@
         const USUARIOS_SISTEMA = {
             // EXEMPLO DE DIRETOR/COORDENADOR
             'diretor': {
-                password: '12345678', // ALTERE A SENHA EM PRODUÇÃO!
+                password: '77928466*DCL', // ALTERE A SENHA EM PRODUÇÃO!
                 name: 'Fábio Lopes Galdêncio', // SUBSTITUA PELO NOME REAL
                 role: 'Diretor do DCL',
                 isAdmin: true,
@@ -701,7 +673,7 @@
             
             // EXEMPLO DE ANALISTA SÊNIOR
             'analista.senior': {
-                password: '123456', // ALTERE A SENHA EM PRODUÇÃO!
+                password: '123456.EDC', // ALTERE A SENHA EM PRODUÇÃO!
                 name: 'Edvaldo Carlos Alves Bedelegue', // SUBSTITUA PELO NOME REAL
                 role: 'Gerente de Apoio Administrativo do DCL',
                 isAdmin: false,
@@ -717,31 +689,68 @@
             },
             
             // EXEMPLO DE ANALISTA JÚNIOR
-            'analista.junior': {
-                password: '123456', // ALTERE A SENHA EM PRODUÇÃO!
+            'ananalista.senior': {
+                password: '123456.FBLP', // ALTERE A SENHA EM PRODUÇÃO!
                 name: 'Fernanda Batista Lima Pavaneli', // SUBSTITUA PELO NOME REAL
                 role: 'Agente de Contratação/Pregoeira',
                 isAdmin: false,
                 progress: {
                     'principios': 100,
-                    'termo-referencia': 45,
-                    'editais': 15,
-                    'etp': 0,
-                    'dispensa': 0,
-                    'contratos': 0
+                    'termo-referencia': 100,
+                    'editais': 75,
+                    'etp': 60,
+                    'dispensa': 30,
+                    'contratos': 20
                 },
                 lastActivity: new Date(Date.now() - 24*60*60*1000).toISOString() // 1 dia atrás
             }
             
-            // ADICIONE MAIS USUÁRIOS CONFORME NECESSÁRIO:
-            // 'usuario.exemplo': {
-            //     password: 'senha_segura',
-            //     name: 'Nome Completo',
-            //     role: 'Cargo/Função',
-            //     isAdmin: false,
-            //     progress: { ... },
-            //     lastActivity: new Date().toISOString()
-            // }
+            'ananalista.senior': {
+                password: '123456.RONd', // ALTERE A SENHA EM PRODUÇÃO!
+                name: 'Rondnele Souza da Silva', // SUBSTITUA PELO NOME REAL
+                role: 'Agente de Contratação Direta',
+                isAdmin: false,
+                progress: {
+                    'principios': 100,
+                    'termo-referencia': 100,
+                    'editais': 75,
+                    'etp': 60,
+                    'dispensa': 30,
+                    'contratos': 20
+                },
+                lastActivity: new Date(Date.now() - 24*60*60*1000).toISOString() // 1 dia atrás
+        };
+
+        'ananalista.senior': {
+                password: '123456.HANNYC', // ALTERE A SENHA EM PRODUÇÃO!
+                name: 'Rondnele Souza da Silva', // SUBSTITUA PELO NOME REAL
+                role: 'Agente de Apoio Administrativo',
+                isAdmin: false,
+                progress: {
+                    'principios': 100,
+                    'termo-referencia': 100,
+                    'editais': 75,
+                    'etp': 60,
+                    'dispensa': 30,
+                    'contratos': 20
+                },
+                lastActivity: new Date(Date.now() - 24*60*60*1000).toISOString() // 1 dia atrás
+        };
+
+        'ananalista.senior': {
+                password: '123456.JOH', // ALTERE A SENHA EM PRODUÇÃO!
+                name: 'Jordania de Oliveira dos Reis', // SUBSTITUA PELO NOME REAL
+                role: 'Agente de Apoio Administrativo',
+                isAdmin: false,
+                progress: {
+                    'principios': 100,
+                    'termo-referencia': 100,
+                    'editais': 75,
+                    'etp': 60,
+                    'dispensa': 30,
+                    'contratos': 20
+                },
+                lastActivity: new Date(Date.now() - 24*60*60*1000).toISOString() // 1 dia atrás
         };
         
         // ========== CONFIGURAÇÃO DOS MÓDULOS ==========
@@ -1889,4 +1898,5 @@
 </body>
 
 </html>
+
 
